@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@vercel/node": "^2.8.2",
     "chokidar": "^3.5.1"
   }
 }
