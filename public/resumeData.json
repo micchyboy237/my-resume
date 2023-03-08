@@ -46,7 +46,6 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
         "school": "University?",
@@ -77,32 +76,62 @@
     ],
     "skills": [
       {
-        "name": "Python",
-        "level": "60%"
+        "category": "Front End",
+        "items": [
+          {
+            "name": "React",
+            "level": "95%"
+          },
+          {
+            "name": "React Native",
+            "level": "90%"
+          },
+          {
+            "name": "GraphQL",
+            "level": "85%"
+          },
+          {
+            "name": "Redux",
+            "level": "80%"
+          },
+          {
+            "name": "TypeScript",
+            "level": "65%"
+          },
+          {
+            "name": "Vanilla JS / CSS",
+            "level": "75%"
+          }
+        ]
       },
       {
-        "name": "VueJs",
-        "level": "55%"
-      },
-      {
-        "name": "ReactJs",
-        "level": "50%"
-      },
-      {
-        "name": "CSS",
-        "level": "90%"
-      },
-      {
-        "name": "PHP",
-        "level": "80%"
-      },
-      {
-        "name": "Swift",
-        "level": "50%"
-      },
-      {
-        "name": "JAVA",
-        "level": "80%"
+        "category": "Back End",
+        "items": [
+          {
+            "name": "NodeJS",
+            "level": "85%"
+          },
+          {
+            "name": "ExpressJS",
+            "level": "85%"
+          },
+          {
+            "name": "MongoDB",
+            "level": "75%"
+          },
+          {
+            "name": "PostgreSQL",
+            "level": "50%"
+          },
+          {
+            "name": "Firebase",
+            "level": "75%"
+          },
+          {
+            "name": "AWS",
+            "level": "60%"
+          }
+        ]
       }
     ]
   },
@@ -111,7 +140,8 @@
       {
         "title": "Macanta CRM",
         "category": "My Travel Blog for my post-university travels",
-        "image": "01.jpg",
+        "image": "salesferry_logo.png",
+        "gif": "salesferry_intro.gif",
         "url": "https://crm.salesferry.com"
       },
       {
