@@ -1,35 +1,38 @@
-import React, { Component } from "react";
-import ReactGA from "react-ga";
-import $ from "jquery";
-import "./App.css";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Resume from "./Components/Resume";
-import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+import React, { Component } from 'react';
+import ReactGA from 'react-ga';
+import $ from 'jquery';
+import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import About from './Components/About';
+import Resume from './Components/Resume';
+import Contact from './Components/Contact';
+import Portfolio from './Components/Portfolio';
+import { scrollToHash } from './utils';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foo: "bar",
+      foo: 'bar',
       resumeData: {}
     };
 
-    ReactGA.initialize("UA-110570651-1");
+    ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
   }
 
-  getResumeData() {
+  getResumeData(onSuccess) {
     $.ajax({
-      url: "./resumeData.json",
-      dataType: "json",
+      url: './resumeData.json',
+      dataType: 'json',
       cache: false,
-      success: function(data) {
+      success: function (data) {
         this.setState({ resumeData: data });
+
+        onSuccess(data);
       }.bind(this),
-      error: function(xhr, status, err) {
+      error: function (xhr, status, err) {
         console.log(err);
         alert(err);
       }
@@ -37,7 +40,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getResumeData();
+    this.getResumeData(scrollToHash);
   }
 
   render() {
