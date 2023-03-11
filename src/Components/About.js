@@ -1,16 +1,17 @@
-import React, { Component } from "react";
-import Fade from "react-reveal";
+import React, { Component } from 'react';
+import Fade from 'react-reveal';
 
 class About extends Component {
   render() {
     if (!this.props.data) return null;
 
     const name = this.props.data.name;
-    const profilepic = "images/" + this.props.data.image;
+    const profilepic = 'images/' + this.props.data.image;
     const bio = this.props.data.bio;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
+    const country = this.props.data.address.country;
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
     const email = this.props.data.email;
@@ -34,19 +35,38 @@ class About extends Component {
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
+                  <div className="address">
+                    <a href={`tel:${phone}`}>
+                      <i className="fa fa-phone"></i>
+                      {phone}
+                    </a>
                     <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
+                    <a href={`mailto:${email}`}>
+                      <i
+                        className="fa fa-envelope"
+                        style={{
+                          fontSize: '12px'
+                        }}
+                      ></i>
+                      {email}
+                    </a>
+                    <div
+                      style={{
+                        display: 'flex'
+                      }}
+                    >
+                      <i className="fa fa-map-marker"></i>
+                      <div
+                        style={{
+                          flex: 1
+                        }}
+                      >
+                        {city}, {state}
+                        <br />
+                        {country}, {zip}
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="columns download">
                   <p>

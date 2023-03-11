@@ -234,6 +234,16 @@ ul#nav li.current a {
 #about .contact-details {
   width: 41.66667%;
 }
+#about .contact-details .address {
+  margin-bottom: 30px;
+  color: white;
+}
+#about .contact-details i {
+  line-height: 30px;
+  width: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
 #about .download {
   width: 58.33333%;
   padding-top: 6px;
