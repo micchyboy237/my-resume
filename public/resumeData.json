@@ -14,8 +14,9 @@
       "street2": "BF Resort Village",
       "city": "Las Piñas City",
       "state": "Metro Manila",
+      "country": "Philippines",
       "zip": "1740",
-      "country": "Philippines"
+      "maplink": "https://www.google.com/maps/place/Las+Pi%C3%B1as,+Metro+Manila/@14.4396056,120.9233471,13z/data=!3m1!4b1!4m6!3m5!1s0x3397ce0835972b6f:0xff33295d281774b!8m2!3d14.444546!4d120.9938736!16zL20vMDE1bGxs"
     },
     "website": "http://www.timbakerdev.com",
     "resumedownload": "https://www.dropbox.com/s/qv804fbw81a45qs/Resume%20-%20Jethro%20Estrada.pdf?dl=1",

@@ -5,14 +5,12 @@ class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
     const profilepic = 'images/' + this.props.data.image;
     const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
     const country = this.props.data.address.country;
-    const zip = this.props.data.address.zip;
+    const maplink = this.props.data.address.maplink;
     const phone = this.props.data.phone;
     const email = this.props.data.email;
     const resumeDownload = this.props.data.resumedownload;
@@ -50,7 +48,10 @@ class About extends Component {
                       ></i>
                       {email}
                     </a>
-                    <div
+                    <br />
+                    <a
+                      href={maplink}
+                      target="_blank"
                       style={{
                         display: 'flex'
                       }}
@@ -58,14 +59,15 @@ class About extends Component {
                       <i className="fa fa-map-marker"></i>
                       <div
                         style={{
-                          flex: 1
+                          flex: 1,
+                          marginBottom: 0
                         }}
                       >
                         {city}, {state}
                         <br />
-                        {country}, {zip}
+                        {country}
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div className="columns download">

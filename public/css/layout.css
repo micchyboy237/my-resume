@@ -231,6 +231,12 @@ ul#nav li.current a {
   height: 120px;
   border-radius: 100%;
 }
+#about .main-col {
+  padding-right: 5%;
+}
+#about a:focus {
+  color: white;
+}
 #about .contact-details {
   width: 41.66667%;
 }
@@ -248,8 +254,8 @@ ul#nav li.current a {
   width: 58.33333%;
   padding-top: 6px;
 }
-#about .main-col {
-  padding-right: 5%;
+#about .download a {
+  float: right;
 }
 #about .download .button {
   margin-top: 6px;
