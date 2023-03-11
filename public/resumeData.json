@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Jethro Estrada",
-    "description": "I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "description": "I'm a Full Stack Software Developer based in the Philippines.\nI use React and React Native to develop web and mobile apps.",
     "image": "profilepic.jpeg",
     "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
@@ -147,34 +147,31 @@
         "gif": "salesferry_intro.gif",
         "url": "https://crm.salesferry.com",
         "apps": {
-          "web": {
-            "links": [
-              "https://tk217.salesferry.com",
-              "https://jz055.salesferry.com",
-              "https://oz462.salesferry.com",
-              "https://ni357.salesferry.com",
-              "https://vt676.salesferry.com",
-              "https://ia787.salesferry.com",
-              "https://kb433.salesferry.com",
-              "https://dm561.salesferry.com",
-              "https://jules-procure.salesferry.com",
-              "https://ew494.salesferry.com",
-              "https://crm.salesferry.com"
-            ]
-          },
-          "mobile": {
-            "links": [
-              "https://apps.apple.com/us/app/macanta/id1526782461",
-              "https://play.google.com/store/apps/details?id=com.macantaapp&hl=en&gl=US&pli=1"
-            ]
-          }
+          "ios": "https://apps.apple.com/us/app/macanta/id1526782461",
+          "android": "https://play.google.com/store/apps/details?id=com.macantaapp&hl=en&gl=US&pli=1",
+          "web": [
+            "https://tk217.salesferry.com",
+            "https://jz055.salesferry.com",
+            "https://oz462.salesferry.com",
+            "https://ni357.salesferry.com",
+            "https://vt676.salesferry.com",
+            "https://ia787.salesferry.com",
+            "https://kb433.salesferry.com",
+            "https://dm561.salesferry.com",
+            "https://jules-procure.salesferry.com",
+            "https://ew494.salesferry.com",
+            "https://crm.salesferry.com"
+          ]
         }
       },
       {
-        "title": "TAS Group",
+        "title": "8weekapp",
         "category": "(offline now) A fighting gear company I started",
         "image": "02.jpg",
-        "url": "https://tasgroup.com.au"
+        "url": "https://tasgroup.com.au",
+        "apps": {
+          "ios": "https://apps.apple.com/us/app/graduapp/id1576401944"
+        }
       },
       {
         "title": "Zakly Inc.",
