@@ -146,6 +146,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  transition: background-color 0.2s ease-in-out;
 }
 .opaque {
   background-color: #333;
