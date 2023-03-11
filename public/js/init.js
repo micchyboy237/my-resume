@@ -51,21 +51,7 @@ jQuery(document).ready(function ($) {
       $("body").css({ width: $(window).width() });
     });
 
-    $(window).on("scroll", function () {
-      var h = $("#home").height();
-      var y = $(window).scrollTop();
-      var nav = $("#nav-wrap");
-
-      if (y > h * 0.2 && y < h && $(window).outerWidth() > 768) {
-        nav.fadeOut("fast");
-      } else {
-        if (y < h * 0.2) {
-          nav.removeClass("opaque").fadeIn("fast");
-        } else {
-          nav.addClass("opaque").fadeIn("fast");
-        }
-      }
-    });
+    showOrHideNavOnScroll();
 
     $(".flexslider").flexslider({
       namespace: "flex-",
@@ -120,4 +106,22 @@ jQuery(document).ready(function ($) {
       return false;
     });
   }, time);
+
+  function showOrHideNavOnScroll() {
+    $(window).on("scroll", function () {
+      var h = $("#home").height();
+      var y = $(window).scrollTop();
+      var nav = $("#nav-wrap");
+
+      if (y > h * 0.2 && y < h && $(window).outerWidth() > 768) {
+        nav.fadeOut("fast");
+      } else {
+        if (y < h * 0.2) {
+          nav.removeClass("opaque").fadeIn("fast");
+        } else {
+          nav.addClass("opaque").fadeIn("fast");
+        }
+      }
+    });
+  }
 });
