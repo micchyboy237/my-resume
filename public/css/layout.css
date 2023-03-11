@@ -30,7 +30,7 @@ body {
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
-header {
+#home {
   position: relative;
   height: 800px;
   min-height: 500px;
@@ -41,13 +41,13 @@ header {
 }
 
 /* vertically center banner section */
-header:before {
+#home:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
-header .banner {
+#home .banner {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
@@ -56,52 +56,52 @@ header .banner {
   text-align: center;
 }
 
-header .banner-text {
+#home .banner-text {
   width: 100%;
 }
-header .banner-text h1 {
+#home .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
   color: #fff;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
 }
-header .banner-text h3 {
+#home .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
   color: #ddd;
   margin: 0 auto;
   width: 70%;
 }
-header .banner-text h3 span,
-header .banner-text h3 a {
+#home .banner-text h3 span,
+#home .banner-text h3 a {
   color: #fff;
 }
-header .banner-text hr {
+#home .banner-text hr {
   width: 60%;
   margin: 18px auto 24px auto;
   border-color: #2f2d2e;
   border-color: rgba(150, 150, 150, 0.1);
 }
 
-/* header social links */
-header .social {
+/* Home social links */
+#home .social {
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
 }
-header .social li {
+#home .social li {
   display: inline-block;
   margin: 0 15px;
   padding: 0;
 }
-header .social li a {
+#home .social li a {
   color: #fff;
 }
-header .social li a:hover {
+#home .social li a:hover {
   color: #0762f9;
 }
 
 /* scrolldown link */
-header .scrolldown a {
+#home .scrolldown a {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -120,7 +120,7 @@ header .scrolldown a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header .scrolldown a:hover {
+#home .scrolldown a:hover {
   color: #0762f9;
 }
 
@@ -259,9 +259,12 @@ ul#nav li.current a {
 
 #resume {
   background: #fff;
+  overflow: hidden;
+}
+
+#resume section {
   padding-top: 90px;
   padding-bottom: 72px;
-  overflow: hidden;
 }
 
 #resume a,

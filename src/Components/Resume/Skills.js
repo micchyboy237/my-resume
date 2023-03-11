@@ -39,7 +39,7 @@ class Skills extends Component {
     });
 
     return (
-      <div className="row skill">
+      <section id="skills" className="row skill">
         <div className="three columns header-col">
           <h1>
             <span>Skills</span>
@@ -49,7 +49,7 @@ class Skills extends Component {
         <div className="nine columns main-col">
           <div className="categories">{skillCategories}</div>
         </div>
-      </div>
+      </section>
     );
   }
 }
