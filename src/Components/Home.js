@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ParticlesBg from 'particles-bg';
 import Fade from 'react-reveal';
+import BgParticles from './BgParticles';
 
 class Home extends Component {
   render() {
@@ -13,7 +13,7 @@ class Home extends Component {
 
     return (
       <section id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <BgParticles />
 
         <div className="row banner">
           <div className="banner-text">

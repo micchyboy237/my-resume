@@ -9,7 +9,7 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Resume Section
+   d. Skills Section
    e. Portfolio Section
    f. Call To Action Section
    g. Testimonials Section
@@ -32,7 +32,7 @@ body {
 
 #home {
   position: relative;
-  height: 800px;
+  height: 100vh;
   min-height: 500px;
   width: 100%;
 
@@ -255,45 +255,45 @@ ul#nav li.current a {
 }
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. Skills Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#skills {
   background: #fff;
   overflow: hidden;
 }
 
-#resume section {
+#skills section {
   padding-top: 90px;
   padding-bottom: 72px;
 }
 
-#resume a,
-#resume a:visited {
+#skills a,
+#skills a:visited {
   color: #0762f9;
 }
-#resume a:hover,
-#resume a:focus {
+#skills a:hover,
+#skills a:focus {
   color: #313131;
 }
 
-#resume h1 {
+#skills h1 {
   font: 18px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#resume h1 span {
+#skills h1 span {
   border-bottom: 3px solid #0762f9;
   padding-bottom: 6px;
 }
-#resume h3 {
+#skills h3 {
   font: 25px/30px "opensans-bold", sans-serif;
 }
 
-#resume .header-col {
+#skills .header-col {
   padding-top: 9px;
 }
-#resume .main-col {
+#skills .main-col {
   padding-right: 10%;
 }
 
@@ -303,17 +303,17 @@ ul#nav li.current a {
   padding-bottom: 24px;
   border-bottom: 1px solid #e8e8e8;
 }
-#resume .info {
+#skills .info {
   font: 16px/24px "librebaskerville-italic", serif;
   color: #6e7881;
   margin-bottom: 18px;
   margin-top: 9px;
 }
-#resume .info span {
+#skills .info span {
   margin-right: 5px;
   margin-left: 5px;
 }
-#resume .date {
+#skills .date {
   font: 15px/24px "opensans-regular", sans-serif;
   margin-top: 6px;
 }

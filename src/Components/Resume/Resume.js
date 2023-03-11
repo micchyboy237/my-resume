@@ -9,7 +9,7 @@ class Resume extends Component {
     if (!this.props.data) return null;
 
     return (
-      <section id="resume">
+      <section id="skills">
         {/* <Slide left duration={1300}>
           <Education data={this.props.data.education} />
         </Slide>
